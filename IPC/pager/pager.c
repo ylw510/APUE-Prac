@@ -1,10 +1,10 @@
 #include <define.h>
-#include <unistd.h>/*pipe(), dup2(), execl() */
-#include <sys/types.h>/*pid_t*/
-#include <stdlib.h>/*exit(), getenv()*/
-#include <stdio.h> /*fopen(), printf(), */
+#include <unistd.h>/* pipe(), dup2(), execl(), fork(), write(), read()*/
+#include <sys/types.h>/* pid_t*/
+#include <stdlib.h>/* exit(), getenv()*/
+#include <stdio.h> /*fopen(), printf()*/
 #include <string.h> /*strlen()*/
-#include <sys/wait.h> /* waitpid()*/
+#include <sys/wait.h> /*waitpid()*/
 
 //maybe like:  echo 'afdd' | more
 /*

@@ -5,6 +5,10 @@
 #include <stdlib.h>
 #define MAX_BUF_SIZE 512
 
+/*
+    关于这个程序中子进程一定会打印出 "hello world\n"的说明。
+        read是阻塞函数如果读不到数据，他就会阻塞当前进程，知道父进程写数据到管道。
+*/
 
 int main()
 {

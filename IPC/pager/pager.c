@@ -84,6 +84,9 @@ int main(int argc, char* argv[])
         {
             argv0 = pager;
         }
+        /*https://www.coder.work/article/2104105
+          This article explains that 'more' takes data from standard input(namely STDIN_FILENO) by default.
+        */
         if (execl(pager, argv0, (char*)(0)) < 0)
         {
             exit(1);
